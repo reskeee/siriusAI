@@ -12,7 +12,7 @@ headers = {
   'Authorization': 'Basic MDFiMGJiZjMtM2I5ZC00ZDNjLWJkYzEtY2EzNjU5ZTI4Y2Y2OjJiODZjOGI2LWMxMmQtNDZlMS04MGJkLWVjNDMwZmM2ZTI2ZA=='
 }
 
-response = requests.request("POST", url, headers=headers, data=payload)
+response = requests.request("POST", url, headers=headers, data=payload, verify=False)
 
-print(response.ur)
-print(response.text)
+# print(response.url)
+print(response)

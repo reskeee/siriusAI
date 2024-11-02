@@ -31,4 +31,7 @@ sample = dataset[0]["audio"]
 # print(type(sample), sample)
 
 result = pipe("audio/convert.mp3")
-print(result["text"])
+# print(result["text"])
+
+with open("predicted_text.txt", "wt") as file:
+    file.write(result["text"])
